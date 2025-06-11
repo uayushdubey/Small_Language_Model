@@ -398,7 +398,7 @@ We welcome contributions from the community! Here's how you can help:
 
 ```bash
 # Fork and clone the repository
-git clone https://github.com/yourusername/small-language-model.git
+git clone https://github.com/uayushdubey/Small_Language_Model_to_Generate_Short_Stories.git
 cd small-language-model
 
 # Create development environment
