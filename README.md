@@ -26,12 +26,12 @@ Small Language Models represent a paradigm shift towards **efficient, specialize
 ┌─────────────────────────────────────────────────────────────┐
 │                    SLM Characteristics                      │
 ├─────────────────────────────────────────────────────────────┤
-│ • Parameter Count: 1M - 50M (vs 1B+ for LLMs) in our case 15M│
-│ • Training Data: Domain-specific, curated datasets        │
-│ • Inference Speed: Real-time capable                      │
-│ • Memory Footprint: <1GB RAM                              │
-│ • Deployment: Edge devices, mobile, web browsers          │
-│ • Training Time: Hours to days (vs weeks/months)          │
+│ • Parameter Count: 1M - 50M (vs 1B+ for LLMs)               │   ** In Our Case 15 M
+│ • Training Data: Domain-specific, curated datasets          │
+│ • Inference Speed: Real-time capable                        │
+│ • Memory Footprint: <1GB RAM                                │
+│ • Deployment: Edge devices, mobile, web browsers            │
+│ • Training Time: Hours to days (vs weeks/months)            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
