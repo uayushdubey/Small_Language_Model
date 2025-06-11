@@ -69,13 +69,13 @@ graph TD
 ### Technical Pipeline
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Data Source   │───▶│  Tokenization   │───▶│ Model Training  │───▶│ Text Generation │
-│                 │    │                 │    │                 │    │                 │
-│ • TinyStories   │    │ • tiktoken      │    │ • GPT-style SLM │    │ • Temperature   │
-│ • Custom Corpus │    │ • Vocabulary    │    │ • Flash Attention│    │ • Top-k Sampling│
-│ • Domain Text   │    │ • Encoding      │    │ • Weight Tying  │    │ • Autoregressive│
-└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
+┌─────────────────┐      ┌─────────────────┐      ┌──────────────────┐      ┌─────────────────┐
+│   Data Source   │ to   │  Tokenization   │  to  │ Model Training   │  to  | Text Generation │
+│                 │      │                 │      │                  │      │                 │
+│ • TinyStories   │      │ • tiktoken      │      │ • GPT-style SLM  │      │ • Temperature   │
+│ • Custom Corpus │      │ • Vocabulary    │      │ • Flash Attention│      │ • Top-k Sampling│
+│ • Domain Text   │      │ • Encoding      │      │ • Weight Tying   │      │ • Autoregressive│
+└─────────────────┘      └─────────────────┘      └──────────────────┘      └─────────────────┘
 ```
 
 ## Market Comparison
@@ -96,25 +96,6 @@ graph TD
 | **Customization** | Easy | Moderate | Difficult |
 | **Privacy** | High (Offline capable) | Medium | Low (Cloud dependent) |
 
-### Performance Characteristics
-
-```
-Performance vs Resource Trade-off
-
-Quality     ▲
-           │
-      LLM  │  ●
-           │     ╲
-           │       ╲
-    Medium │         ●
-           │           ╲
-           │             ╲
-      SLM  │               ●
-           │
-           └─────────────────────────────────▶
-                    Resource Requirements
-                    (Compute, Memory, Cost)
-```
 
 ### Popular Models in Each Category
 
@@ -448,26 +429,6 @@ isort src/
 - **tiktoken**: OpenAI for the efficient tokenization library
 - **PyTorch Team**: For the exceptional deep learning framework
 - **Hugging Face**: For the datasets and model hosting infrastructure
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 Ayush Dubey
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
 
 ## 👨‍💻 Author
 
