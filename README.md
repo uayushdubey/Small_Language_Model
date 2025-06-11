@@ -21,8 +21,9 @@ Unlike massive language models requiring extensive computational resources, this
 - **Flexible Architecture**: Configurable model sizes from 1M to 50M+ parameters
 - **Production-Ready**: Model checkpointing, loss visualization, and inference utilities
 
-## Architecture Overview
+### Model Architecture Flow
 
+```mermaid
 graph TB
     subgraph "Input Processing"
         A[Input Text] --> B[Tokenizer<br/>tiktoken GPT-2]
@@ -60,36 +61,12 @@ graph TB
         P --> Q[Generated Text]
     end
     
-    %% Style Sections for Visibility
-    style A fill:#e8f5e9
-    style B fill:#e8f5e9
-    style C fill:#e8f5e9
-    style D fill:#e8f5e9
-
-    style E fill:#bbdefb
-    style F fill:#bbdefb
-    style G fill:#bbdefb
-
-    style H fill:#ffe0b2
-    style I fill:#ffe0b2
-    style J fill:#ffe0b2
-    style K fill:#ffe0b2
-    style H1 fill:#fff3e0
+    style E fill:#e1f5fe
+    style F fill:#e1f5fe
     style H2 fill:#fff3e0
-    style H3 fill:#fff3e0
-    style H4 fill:#fff3e0
     style H5 fill:#fff3e0
-    style H6 fill:#fff3e0
-
-    style L fill:#ede7f6
-    style M fill:#d1c4e9
-
-    style N fill:#f8bbd0
-    style O fill:#f8bbd0
-    style P fill:#f8bbd0
-    style Q fill:#f8bbd0
-
-
+    style M fill:#f3e5f5
+``` change the color so all the text should be visible
 graph LR
     subgraph "Multi-Head Attention"
         A[Input: B×T×C] --> B[Linear Projection<br/>3×n_embd]
