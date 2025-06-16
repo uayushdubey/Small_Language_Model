@@ -32,7 +32,7 @@ Input Text → Tokenization → Token Embeddings + Position Embeddings
                             Input Dropout & Layer Normalization
                                         ↓
                           ┌─────────────────────────────────┐
-                          │      Transformer Block 1       │
+                          │      Transformer Block 1        │
                           │  ┌─────────────────────────┐    │
                           │  │   Multi-Head Attention  │    │
                           │  └─────────────────────────┘    │
@@ -45,7 +45,7 @@ Input Text → Tokenization → Token Embeddings + Position Embeddings
                                        ...
                                         ↓
                           ┌─────────────────────────────────┐
-                          │      Transformer Block N       │
+                          │      Transformer Block N        │
                           └─────────────────────────────────┘
                                         ↓
                             Final Layer Norm + LM Head
@@ -499,17 +499,6 @@ Loss = -Σ log P(x_t | x_1, ..., x_{t-1})
 - [PyTorch Transformer Tutorial](https://pytorch.org/tutorials/beginner/transformer_tutorial.html) - Official documentation
 - [TinyStories Dataset](https://arxiv.org/abs/2305.07759) - Dataset characteristics and benchmarks
 
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on:
-- Code style and standards
-- Testing requirements
-- Pull request process
-- Issue reporting
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
