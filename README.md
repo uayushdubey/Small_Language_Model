@@ -206,7 +206,7 @@ Storage >= 5GB for datasets and models
 ```bash
 # 1. Clone the repository
 git clone https://github.com/uayushdubey/Small_Language_Model.git
-cd Small_Language_Model_to_Generate_Short_Stories
+cd Small_Language_Model_to_Generate
 
 # 2. Create virtual environment
 python -m venv slm_env
