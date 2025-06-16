@@ -7,7 +7,7 @@
 [![TikToken](https://img.shields.io/badge/TikToken-GPT2-green.svg)](https://github.com/openai/tiktoken)
 [![TinyStories](https://img.shields.io/badge/Dataset-TinyStories-purple.svg)](https://huggingface.co/datasets/roneneldan/TinyStories)
 
-## 🎯 Project Overview
+## Project Overview
 
 This repository presents a **complete implementation of a GPT-style transformer model** built from scratch for next token prediction and text generation. The project demonstrates an end-to-end deep learning pipeline including data preprocessing, model architecture, training optimization, and inference capabilities.
 
@@ -331,7 +331,7 @@ def generate_with_repetition_penalty(model, prompt, max_tokens=200, rep_penalty=
     pass
 ```
 
-## 📈 Performance Analysis
+## Performance Analysis
 
 ### Training Metrics
 
